@@ -10,12 +10,12 @@ void main() {
 
 class MyApp extends StatelessWidget {
   //* factory
-  UserProfile userService = locator<UserProfile>();
-  UserProfile userService2 = locator<UserProfile>();
+  final UserProfile userService = locator<UserProfile>();
+  final UserProfile userService2 = locator<UserProfile>();
 
   //* singleton
-  LoginService loginService = locator<LoginService>();
-  LoginService loginService2 = locator<LoginService>();
+  final LoginService loginService = locator<LoginService>();
+  final LoginService loginService2 = locator<LoginService>();
 
   @override
   Widget build(BuildContext context) {
